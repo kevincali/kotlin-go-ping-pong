@@ -9,17 +9,9 @@ plugins {
 
 group = "com.kevincali"
 version = "0.0.1"
-application {
-    mainClass.set("com.kevincali.ApplicationKt")
+application.mainClass.set("com.kevincali.ApplicationKt")
 
-    val isDevelopment: Boolean = project.ext.has("development")
-    applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
-}
-
-repositories {
-    mavenCentral()
-    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
-}
+repositories.mavenCentral()
 
 dependencies {
     implementation("io.ktor:ktor-client-core:$ktorVersion")
