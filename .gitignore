@@ -13,3 +13,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+### Built files ###
+go-ping-pong
+kotlin-ping-pong.jar
